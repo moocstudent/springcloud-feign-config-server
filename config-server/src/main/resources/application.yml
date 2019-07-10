@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      label: config-label-test
+      server:
+        git:
+          uri: https://github.com/deadzq/springcloud-config-server-test
+          search-paths: test1
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/

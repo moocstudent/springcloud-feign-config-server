@@ -8,9 +8,12 @@ import org.springframework.stereotype.Service;
 import cn.how2j.springcloud.client.ProductClientFeign;
 import cn.how2j.springcloud.pojo.Product;
 
+import javax.annotation.Resource;
+
 @Service
 public class ProductService {
-	@Autowired ProductClientFeign productClientFeign;
+	@Resource
+	private ProductClientFeign productClientFeign;
 	public List<Product> listProducts(){
 		return productClientFeign.listProdcuts();
 
