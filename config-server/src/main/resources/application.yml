@@ -3,11 +3,13 @@ spring:
     name: config-server
   cloud:
     config:
-      label: config-label-test
+      label: master
       server:
         git:
-          uri: https://github.com/deadzq/springcloud-config-server-test
+          uri: https://github.com/deadzq/config-server-properties
           search-paths: test1
+          username: deadzq
+          password: xxxxxxxxxx
 
 eureka:
   client:

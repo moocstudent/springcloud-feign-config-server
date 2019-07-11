@@ -1,7 +1,7 @@
 spring:
   cloud:
     config:
-      label: config-label-test
+      label: master
       profile: dev
       discovery:
         enabled: true
