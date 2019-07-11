@@ -12,3 +12,5 @@ https://github.com/deadzq/springcloud-config-server-test ,<br>
 
 启动顺序在开启feign前先要开启config-server <br>
 注意要将版本信息调整为与feign项目name值相同. <br>
+
+连接私有仓库,要在config-server下yml的git下的username和password
